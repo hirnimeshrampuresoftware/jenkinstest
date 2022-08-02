@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout'){
           steps {
-            gitCheckout(basedir: "github.com/hirnimeshrampuresoftware/jenkinstest.git")
+            checkout(basedir: "github.com/hirnimeshrampuresoftware/jenkinstest.git")
           }
         }
         stage('Hello') {
