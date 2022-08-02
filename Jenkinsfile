@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout'){
           steps {
-            checkout(basedir: "github.com/hirnimeshrampuresoftware/jenkinstest.git")
+            git branch: 'main', url: 'https://github.com/hirnimeshrampuresoftware/jenkinstest'
           }
         }
         stage('Hello') {
